@@ -1,0 +1,8 @@
+FROM python:3.6
+
+
+EXPOSE 8080
+
+ADD server.py /usr/local/share/server.py
+
+CMD ["/usr/bin/python3", "/usr/local/share/server.py"] 
